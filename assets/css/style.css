@@ -89,6 +89,12 @@ h1 {
     cursor: pointer;
 }
 
+img {
+    max-width: 100%;
+    height: 70%;
+    
+}
+
 /* comeback after img added and change sizes */
 .choice {
     position: relative;
