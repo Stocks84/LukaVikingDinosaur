@@ -68,6 +68,73 @@ h1 {
     color: green;
 }
 
+/* Game buttons */
+
+.game {
+    position: relative;
+    display: grid;
+    grid-template-columns: (repeat(2, 1fr));
+    grid-template-areas: 
+        "paper scissors"
+        "rock rock";
+    place-items: center;
+    height: 30rem;
+    padding-top: 4rem;
+}
+
+.choice-btn {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* comeback after img added and change sizes */
+.choice {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    background: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.choice::before {
+    content:"";
+    position: absolute;
+    left: -15%;
+    top: -15%;
+    width: 130%;
+    height: 130%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.choice.paper::before {
+    background: blue;
+}
+
+.choice.rock::before {
+    background: pink;
+}
+
+.choice.scissors::before {
+    background: orange;
+}
+
+.choice-btn[data-choice="paper"] {
+    grid-area: paper;
+}
+
+.choice-btn[data-choice="scissors"] {
+    grid-area: scissors;
+}
+
+.choice-btn[data-choice="rock"] {
+    grid-area: rock;
+}
+
 /* footer and social media */
 
 /* Fill in Later */
