@@ -188,27 +188,28 @@ h1 {
 
 /* Game Rules button */
 #game_rules {
-    max-width: 200%;
-    max-height: 200%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2rem 4rem;
 }
 
 .game-rules {
     position: absolute;
-    height: 0.1em;
-    width: 0.1em;
-    top: 0;
-    left: 0;
+    height: 50%;
+    width: 50%;
+    top: 6em;
+    left: 6em;
     display: grid;
     place-items: center;
     background: grey;
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
     pointer-events: none;
 }
 
 .game-rules-container {
     background: white;
-    border-radius: 0.1em;
+    border-radius: 0.5em;
 }
 
 .game-rules-header {
@@ -216,6 +217,23 @@ h1 {
     width: 100%;
     justify-content: space-between;
     padding: 2rem 2rem 1rem;
+}
+
+.game-rules-heading {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.close-btn {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.show-game-rules {
+    opacity: 1;
+    pointer-events: initial;
 }
 
 /* footer and social media */
@@ -243,17 +261,26 @@ h1 {
 /* small tablet */
 
 @media (min-width: 500px) {
-    /* Fill in later */
+    .game-rules {
+        top: 8em;
+        left: 8em;
+    }
 }
 
 /* tablet */
 
 @media (min-width: 750px) {
-    /* Fill in later */
+    .game-rules {
+        top: 10em;
+        left: 10em;
+    }
 }
 
 /* desktop */
 
 @media (min-width: 950px) {
-    /* Fill in later */
+    .game-rules {
+        top: 12em;
+        left: 12em;
+    }
 }
