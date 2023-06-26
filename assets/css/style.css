@@ -92,16 +92,18 @@ h1 {
 .choice img {
     transform: scale(1.2);
     max-width: 100%;
-    height: 70%;
+    height: 50%;
     border: 1px solid black;
     
 }
 
 /* comeback after img added and change sizes */
+
+/* this alters the ring sizes */
 .choice {
     position: relative;
-    width: 10rem;
-    height: 10rem;
+    width: 6rem;
+    height: 6rem;
     background: white;
     border-radius: 50%;
     display: grid;
@@ -156,7 +158,32 @@ h1 {
     grid-area: rock;
 }
 
+/* Rules button */
+
+.rules-btn {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 0.6rem;
+    color: black;
+    padding: 0.6rem 2.5rem;
+    font-family: inherit;
+    text-transform: inherit;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.rules-btn:focus {
+    border: 2px solid white; 
+}
+
 /* footer and social media */
+
+/* Add more icons youtube to patrol and bayern munich highlights */
 
 .social-icons {
     text-align: center;
@@ -170,7 +197,7 @@ h1 {
     font-size: 150%;
     margin: 2%;
     padding: 2%;
-    color: #708090;
+    color: black;
 }
 /* Fill in Later */
 
